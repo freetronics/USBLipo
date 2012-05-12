@@ -172,21 +172,6 @@
 </library>
 <library name="freetronics-master-v1">
 <packages>
-<package name="SOT23-3">
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
-<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 <package name="S2B-PH">
 <description>2mm SMD side-entry connector. tDocu layer indicates the actual physical plastic housing. +/- indicate SparkFun standard batteries and wiring.</description>
 <wire x1="-4" y1="3" x2="4" y2="3" width="0.2032" layer="51"/>
@@ -284,6 +269,21 @@
 <text x="-3.81" y="6.35" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="1.27" y="2.2" drill="0.9"/>
 <hole x="1.27" y="-2.2" drill="0.9"/>
+</package>
+<package name="SOT23-3">
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -451,9 +451,6 @@ design rules under a new name.</description>
 <element name="IC1" library="freetronics-luke" package="SOT23-5" value="LTC4054" x="20.32" y="8.89" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.161" y="6.604" size="0.8128" layer="25" ratio="15" rot="R90"/>
 </element>
-<element name="Q1" library="freetronics-master-v1" package="SOT23-3" value="2N7002" x="21.59" y="3.429" smashed="yes" rot="R180">
-<attribute name="VALUE" x="19.558" y="0.8255" size="0.8128" layer="27" ratio="15"/>
-</element>
 <element name="R1" library="freetronics" package="0603" value="1k" x="13.208" y="6.35" smashed="yes" rot="R270">
 <attribute name="VALUE" x="12.319" y="5.715" size="0.8128" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
@@ -479,12 +476,14 @@ design rules under a new name.</description>
 <element name="J2" library="freetronics-luke" package="USB-MINIB-FT" value="USB" x="5.08" y="7.62" smashed="yes">
 <attribute name="VALUE" x="5.08" y="0.9525" size="0.8128" layer="27" ratio="15"/>
 </element>
+<element name="Q1" library="freetronics-luke" package="SOT23-3" value="2N7002" x="21.59" y="3.4925" smashed="yes" rot="R180">
+<attribute name="VALUE" x="19.304" y="0.762" size="0.8128" layer="27" ratio="15"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="IC1" pad="2"/>
 <contactref element="C1" pad="1"/>
-<contactref element="Q1" pad="2"/>
 <contactref element="R3" pad="2"/>
 <contactref element="J1" pad="1"/>
 <via x="18.923" y="8.89" extent="1-16" drill="0.4"/>
@@ -528,17 +527,19 @@ design rules under a new name.</description>
 <contactref element="J2" pad="SH4"/>
 <contactref element="J2" pad="SH1"/>
 <contactref element="J2" pad="SH2"/>
+<contactref element="Q1" pad="2"/>
 </signal>
 <signal name="N$1">
-<contactref element="Q1" pad="3"/>
 <contactref element="LED2" pad="C"/>
-<wire x1="18.499" y1="2.329" x2="21.59" y2="2.329" width="0.6096" layer="1"/>
 <wire x1="11.641" y1="2.329" x2="18.499" y2="2.329" width="0.4572" layer="16"/>
 <wire x1="11.049" y1="2.921" x2="11.641" y2="2.329" width="0.4572" layer="16"/>
 <wire x1="11.7952" y1="2.1748" x2="13.1763" y2="2.1748" width="0.6096" layer="1"/>
 <wire x1="11.7952" y1="2.1748" x2="11.049" y2="2.921" width="0.6096" layer="1"/>
 <via x="18.499" y="2.329" extent="1-16" drill="0.4"/>
 <via x="11.049" y="2.921" extent="1-16" drill="0.4"/>
+<contactref element="Q1" pad="3"/>
+<wire x1="18.499" y1="2.329" x2="21.59" y2="2.329" width="0.4064" layer="1"/>
+<wire x1="21.59" y1="2.329" x2="21.59" y2="2.3925" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="R1" pad="2"/>
@@ -585,7 +586,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$6">
 <contactref element="IC1" pad="1"/>
-<contactref element="Q1" pad="1"/>
 <contactref element="R2" pad="2"/>
 <contactref element="LED1" pad="C"/>
 <wire x1="17.438" y1="5.5" x2="15.875" y2="5.5" width="0.6096" layer="1"/>
@@ -593,7 +593,6 @@ design rules under a new name.</description>
 <wire x1="16.649" y1="2.171" x2="17.438" y2="2.96" width="0.6096" layer="1"/>
 <wire x1="21.59" y1="6.35" x2="21.59" y2="7.9099" width="0.6096" layer="1"/>
 <wire x1="21.59" y1="7.9099" x2="21.6201" y2="7.94" width="0.4572" layer="1"/>
-<wire x1="22.54" y1="5.4" x2="22.54" y2="4.429" width="0.6096" layer="1"/>
 <wire x1="21.59" y1="6.35" x2="22.54" y2="5.4" width="0.6096" layer="1"/>
 <wire x1="17.438" y1="5.5" x2="20.74" y2="5.5" width="0.4572" layer="16"/>
 <wire x1="20.74" y1="5.5" x2="21.59" y2="6.35" width="0.4572" layer="16"/>
@@ -601,6 +600,8 @@ design rules under a new name.</description>
 <wire x1="15.0058" y1="2.171" x2="15.24" y2="2.1749" width="0.4064" layer="1"/>
 <via x="17.438" y="5.5" extent="1-16" drill="0.4"/>
 <via x="21.59" y="6.35" extent="1-16" drill="0.4"/>
+<contactref element="Q1" pad="1"/>
+<wire x1="22.54" y1="5.4" x2="22.54" y2="4.4925" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="IC1" pad="5"/>
