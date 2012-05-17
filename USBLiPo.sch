@@ -1040,8 +1040,8 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <parts>
 <part name="IC1" library="freetronics-luke" deviceset="LTC4054" device=""/>
 <part name="U$1" library="freetronics-luke" deviceset="GND" device=""/>
-<part name="R1" library="freetronics" deviceset="RESISTOR" device="0603" value="1k"/>
-<part name="R2" library="freetronics" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R2" library="freetronics" deviceset="RESISTOR" device="0603" value="1k"/>
+<part name="R1" library="freetronics" deviceset="RESISTOR" device="0603" value="10k"/>
 <part name="C1" library="freetronics" deviceset="CAP" device="0603" value="1uF"/>
 <part name="U$4" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="U$6" library="freetronics-luke" deviceset="GND" device=""/>
@@ -1106,11 +1106,11 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <attribute name="VALUE" x="96.52" y="86.868" size="1.27" layer="96"/>
 </instance>
 <instance part="U$1" gate="G$1" x="106.68" y="50.8"/>
-<instance part="R1" gate="G$1" x="132.08" y="104.14" smashed="yes" rot="MR270">
+<instance part="R2" gate="G$1" x="132.08" y="104.14" smashed="yes" rot="MR270">
 <attribute name="NAME" x="134.62" y="106.68" size="1.27" layer="95"/>
 <attribute name="VALUE" x="134.62" y="104.14" size="1.27" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="121.92" y="104.14" smashed="yes" rot="MR270">
+<instance part="R1" gate="G$1" x="121.92" y="104.14" smashed="yes" rot="MR270">
 <attribute name="NAME" x="124.46" y="106.68" size="1.27" layer="95"/>
 <attribute name="VALUE" x="124.46" y="104.14" size="1.27" layer="96"/>
 </instance>
@@ -1230,7 +1230,7 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <wire x1="132.08" y1="93.98" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="99.06" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
 <junction x="132.08" y="96.52"/>
 </segment>
@@ -1254,8 +1254,8 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <wire x1="63.5" y1="111.76" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
 <junction x="63.5" y="81.28"/>
 <junction x="121.92" y="111.76"/>
-<pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="F1" gate="G$1" pin="P$2"/>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -1271,7 +1271,7 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <junction x="121.92" y="76.2"/>
 <junction x="132.08" y="76.2"/>
 <pinref part="IC1" gate="G$1" pin="!CHRG"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 </segment>
