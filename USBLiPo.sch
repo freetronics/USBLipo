@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1074,11 +1074,11 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <text x="22.86" y="86.36" size="1.27" layer="98">SMD mini-B USB socket</text>
 <text x="53.34" y="86.36" size="1.27" layer="98">1812</text>
 <text x="55.88" y="55.88" size="1.27" layer="98">0603</text>
-<text x="129.54" y="58.42" size="1.27" layer="98">2-pin 2.0mm JST</text>
-<text x="134.62" y="68.58" size="1.27" layer="98">SOT-23</text>
+<text x="129.54" y="58.42" size="1.27" layer="98">2.0mm JST</text>
+<text x="154.94" y="68.58" size="1.27" layer="98">SOT-23</text>
 <text x="124.46" y="101.6" size="1.27" layer="98">0603</text>
 <text x="137.16" y="86.36" size="1.27" layer="98">0603</text>
-<text x="152.4" y="86.36" size="1.27" layer="98">0603</text>
+<text x="154.94" y="86.36" size="1.27" layer="98">0603</text>
 <text x="134.62" y="101.6" size="1.27" layer="98">0603</text>
 <text x="93.98" y="55.88" size="1.27" layer="98">0603</text>
 <text x="10.16" y="30.48" size="1.27" layer="98">USER MUST ALWAYS DOUBLE CHECK BATTERY POLARITY BEFORE USE BECAUSE SOME LIPO CELLS ARE NOT STANDARD.</text>
@@ -1098,7 +1098,11 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <wire x1="175.26" y1="10.16" x2="134.62" y2="10.16" width="0.1524" layer="98"/>
 <wire x1="134.62" y1="10.16" x2="134.62" y2="38.1" width="0.1524" layer="98"/>
 <text x="137.16" y="83.82" size="1.27" layer="98">Green</text>
-<text x="152.4" y="83.82" size="1.27" layer="98">Yellow</text>
+<text x="154.94" y="83.82" size="1.27" layer="98">Yellow</text>
+<wire x1="121.92" y1="73.66" x2="142.24" y2="73.66" width="0.3048" layer="98" style="shortdash"/>
+<wire x1="142.24" y1="73.66" x2="142.24" y2="55.88" width="0.3048" layer="98" style="shortdash"/>
+<wire x1="142.24" y1="55.88" x2="121.92" y2="55.88" width="0.3048" layer="98" style="shortdash"/>
+<wire x1="121.92" y1="55.88" x2="121.92" y2="73.66" width="0.3048" layer="98" style="shortdash"/>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="106.68" y="76.2" smashed="yes">
@@ -1119,7 +1123,7 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <attribute name="VALUE" x="55.88" y="58.42" size="1.27" layer="96"/>
 </instance>
 <instance part="U$4" gate="G$1" x="63.5" y="50.8"/>
-<instance part="U$6" gate="G$1" x="147.32" y="50.8" rot="MR0"/>
+<instance part="U$6" gate="G$1" x="149.86" y="50.8" rot="MR0"/>
 <instance part="U$7" gate="G$1" x="127" y="50.8"/>
 <instance part="F1" gate="G$1" x="53.34" y="81.28" smashed="yes">
 <attribute name="NAME" x="50.038" y="86.36" size="1.27" layer="95"/>
@@ -1135,14 +1139,14 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <attribute name="NAME" x="137.16" y="91.44" size="1.27" layer="95"/>
 <attribute name="VALUE" x="137.16" y="88.9" size="1.27" layer="96"/>
 </instance>
-<instance part="LED2" gate="G$1" x="147.32" y="91.44" smashed="yes" rot="MR0">
-<attribute name="NAME" x="152.4" y="91.44" size="1.27" layer="95"/>
-<attribute name="VALUE" x="152.4" y="88.9" size="1.27" layer="96"/>
+<instance part="LED2" gate="G$1" x="149.86" y="91.44" smashed="yes" rot="MR0">
+<attribute name="NAME" x="154.94" y="91.44" size="1.27" layer="95"/>
+<attribute name="VALUE" x="154.94" y="88.9" size="1.27" layer="96"/>
 </instance>
 <instance part="J1" gate="G$1" x="35.56" y="76.2"/>
-<instance part="Q1" gate="G$1" x="147.32" y="76.2" smashed="yes">
-<attribute name="NAME" x="134.62" y="73.66" size="1.27" layer="95"/>
-<attribute name="VALUE" x="134.62" y="71.12" size="1.27" layer="96"/>
+<instance part="Q1" gate="G$1" x="149.86" y="76.2" smashed="yes">
+<attribute name="NAME" x="154.94" y="73.66" size="1.27" layer="95"/>
+<attribute name="VALUE" x="154.94" y="71.12" size="1.27" layer="96"/>
 </instance>
 <instance part="R3" gate="G$1" x="71.12" y="60.96" smashed="yes" rot="MR270">
 <attribute name="NAME" x="73.66" y="60.96" size="1.27" layer="95"/>
@@ -1180,7 +1184,7 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <pinref part="U$4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="147.32" y1="71.12" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="71.12" x2="149.86" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="GND"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
 </segment>
@@ -1218,15 +1222,15 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="147.32" y1="86.36" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="86.36" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<wire x1="132.08" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="96.52" x2="147.32" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="96.52" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="93.98" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
@@ -1263,7 +1267,7 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="142.24" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="76.2" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="99.06" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="76.2" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
