@@ -1547,21 +1547,21 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <parts>
 <part name="IC1" library="freetronics-luke" deviceset="LTC4054" device=""/>
 <part name="U$1" library="freetronics-luke" deviceset="GND" device=""/>
-<part name="R2" library="freetronics" deviceset="RESISTOR" device="0603" value="1k"/>
-<part name="R1" library="freetronics" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R2" library="freetronics" deviceset="RESISTOR" device="0603" value="1K"/>
+<part name="R1" library="freetronics" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="C1" library="freetronics" deviceset="CAP" device="0603" value="1uF"/>
 <part name="U$4" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="U$6" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="F1" library="freetronics-luke" deviceset="PTC" device="" value="500mA PTC"/>
 <part name="U$2" library="freetronics-luke" deviceset="GND" device=""/>
-<part name="R5" library="freetronics" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R5" library="freetronics" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="U$3" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="LED1" library="freetronics-master-v1" deviceset="LED" device="0603" value="Charge"/>
 <part name="LED2" library="freetronics-master-v1" deviceset="LED" device="0603" value="Standby"/>
 <part name="Q1" library="freetronics-luke" deviceset="2N7002" device=""/>
-<part name="R3" library="freetronics" deviceset="RESISTOR" device="0603" value="3k3"/>
+<part name="R3" library="freetronics" deviceset="RESISTOR" device="0603" value="3K3"/>
 <part name="U$5" library="freetronics-luke" deviceset="GND" device=""/>
-<part name="R4" library="freetronics" deviceset="RESISTOR" device="0603" value="10k"/>
+<part name="R4" library="freetronics" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="U$8" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="S1" library="freetronics-luke" deviceset="SJ" device=""/>
 <part name="S2" library="freetronics-luke" deviceset="SJ" device=""/>
@@ -1595,17 +1595,43 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <frame x1="5.08" y1="5.08" x2="116.84" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <text x="73.66" y="55.88" size="1.27" layer="98">0603</text>
 <text x="83.82" y="55.88" size="1.27" layer="98">0603</text>
-<text x="139.7" y="33.02" size="1.778" layer="98">S1  S2 Charge current</text>
-<text x="139.7" y="27.94" size="1.778" layer="98">0   0  100 mA</text>
-<text x="139.7" y="22.86" size="1.778" layer="98">0   1  200 mA</text>
-<text x="139.7" y="17.78" size="1.778" layer="98">1   0  403 mA</text>
-<text x="139.7" y="12.7" size="1.778" layer="98">1   1  503 mA</text>
-<wire x1="134.62" y1="38.1" x2="175.26" y2="38.1" width="0.1524" layer="98"/>
-<wire x1="175.26" y1="38.1" x2="175.26" y2="10.16" width="0.1524" layer="98"/>
-<wire x1="175.26" y1="10.16" x2="134.62" y2="10.16" width="0.1524" layer="98"/>
-<wire x1="134.62" y1="10.16" x2="134.62" y2="38.1" width="0.1524" layer="98"/>
+<text x="154.94" y="33.02" size="1.778" layer="98">Charge current</text>
+<text x="129.54" y="27.94" size="1.778" layer="98">Open</text>
+<wire x1="127" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="98"/>
+<wire x1="139.7" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="98"/>
+<wire x1="152.4" y1="35.56" x2="177.8" y2="35.56" width="0.1524" layer="98"/>
+<wire x1="177.8" y1="35.56" x2="177.8" y2="30.48" width="0.1524" layer="98"/>
+<wire x1="177.8" y1="30.48" x2="177.8" y2="10.16" width="0.1524" layer="98"/>
+<wire x1="177.8" y1="10.16" x2="152.4" y2="10.16" width="0.1524" layer="98"/>
+<wire x1="152.4" y1="10.16" x2="139.7" y2="10.16" width="0.1524" layer="98"/>
+<wire x1="139.7" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="98"/>
+<wire x1="127" y1="10.16" x2="127" y2="30.48" width="0.1524" layer="98"/>
 <text x="137.16" y="83.82" size="1.27" layer="98">Green</text>
 <text x="154.94" y="83.82" size="1.27" layer="98">Yellow</text>
+<text x="160.02" y="27.94" size="1.778" layer="98">100 mA</text>
+<text x="142.24" y="27.94" size="1.778" layer="98">Open</text>
+<text x="142.24" y="22.86" size="1.778" layer="98">Closed</text>
+<text x="129.54" y="22.86" size="1.778" layer="98">Open</text>
+<text x="160.02" y="22.86" size="1.778" layer="98">200 mA</text>
+<text x="129.54" y="17.78" size="1.778" layer="98">Closed</text>
+<text x="142.24" y="17.78" size="1.778" layer="98">Open</text>
+<text x="160.02" y="17.78" size="1.778" layer="98">403 mA</text>
+<text x="129.54" y="12.7" size="1.778" layer="98">Closed</text>
+<text x="142.24" y="12.7" size="1.778" layer="98">Closed</text>
+<text x="160.02" y="12.7" size="1.778" layer="98">503 mA</text>
+<text x="129.54" y="33.02" size="1.778" layer="98">S1</text>
+<text x="142.24" y="33.02" size="1.778" layer="98">S2</text>
+<wire x1="127" y1="30.48" x2="127" y2="35.56" width="0.1524" layer="98"/>
+<wire x1="127" y1="30.48" x2="139.7" y2="30.48" width="0.1524" layer="98"/>
+<wire x1="139.7" y1="30.48" x2="152.4" y2="30.48" width="0.1524" layer="98"/>
+<wire x1="152.4" y1="30.48" x2="177.8" y2="30.48" width="0.1524" layer="98"/>
+<wire x1="139.7" y1="10.16" x2="139.7" y2="30.48" width="0.1524" layer="98"/>
+<wire x1="152.4" y1="10.16" x2="152.4" y2="30.48" width="0.1524" layer="98"/>
+<wire x1="139.7" y1="30.48" x2="139.7" y2="35.56" width="0.1524" layer="98"/>
+<wire x1="152.4" y1="30.48" x2="152.4" y2="35.56" width="0.1524" layer="98"/>
+<text x="127" y="38.1" size="1.778" layer="94" ratio="12">Charge Current Configuration</text>
+<text x="20.32" y="96.52" size="1.778" layer="94" ratio="12">Input: 5Vdc 500mA</text>
+<text x="170.18" y="96.52" size="1.778" layer="94" ratio="12">Output</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="106.68" y="76.2" smashed="yes">

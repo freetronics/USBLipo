@@ -535,16 +535,16 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="IC1" library="freetronics-luke" package="SOT23-5" value="LTC4054" x="15.24" y="9.2075" smashed="yes" rot="R90"/>
-<element name="R2" library="freetronics" package="0603" value="1k" x="7.112" y="6.35" smashed="yes" rot="R270"/>
-<element name="R1" library="freetronics" package="0603" value="10k" x="9.144" y="6.35" smashed="yes" rot="R270"/>
+<element name="R2" library="freetronics" package="0603" value="1K" x="7.112" y="6.35" smashed="yes" rot="R270"/>
+<element name="R1" library="freetronics" package="0603" value="10K" x="9.144" y="6.35" smashed="yes" rot="R270"/>
 <element name="C1" library="freetronics" package="0603" value="1uF" x="13.97" y="12.8905" smashed="yes" rot="R180"/>
 <element name="F1" library="freetronics-luke" package="1812" value="500mA PTC" x="8.636" y="10.795" smashed="yes"/>
-<element name="R5" library="freetronics" package="0603" value="10k" x="13.97" y="5.6515" smashed="yes" rot="R270"/>
+<element name="R5" library="freetronics" package="0603" value="10K" x="13.97" y="5.6515" smashed="yes" rot="R270"/>
 <element name="LED1" library="freetronics-master-v1" package="LED-0603" value="Charge" x="11.684" y="2.54" smashed="yes"/>
 <element name="LED2" library="freetronics-master-v1" package="LED-0603" value="Standby" x="5.588" y="2.54" smashed="yes"/>
 <element name="Q1" library="freetronics-luke" package="SOT23-3" value="2N7002" x="16.51" y="3.81" smashed="yes" rot="R180"/>
-<element name="R3" library="freetronics" package="0603" value="3k3" x="19.3675" y="3.175" smashed="yes" rot="R90"/>
-<element name="R4" library="freetronics" package="0603" value="10k" x="16.8275" y="1.11125" smashed="yes" rot="R180"/>
+<element name="R3" library="freetronics" package="0603" value="3K3" x="19.3675" y="3.175" smashed="yes" rot="R90"/>
+<element name="R4" library="freetronics" package="0603" value="10K" x="16.8275" y="1.11125" smashed="yes" rot="R180"/>
 <element name="S1" library="freetronics-luke" package="SJ" value="SJ" x="21.59" y="2.8575" smashed="yes" rot="R90"/>
 <element name="S2" library="freetronics-luke" package="SJ" value="SJ" x="24.4475" y="2.8575" smashed="yes" rot="R90"/>
 <element name="B1" library="freetronics-jon" package="FREETRONICS-LUKE_JST-2MM-TH-RA" value="2P-JST-PTH" x="24.13" y="7.62" smashed="yes" rot="R270">
