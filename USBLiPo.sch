@@ -926,7 +926,7 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 </library>
 <library name="freetronics-jon">
 <packages>
-<package name="FREETRONICS-LUKE_JST-2MM-TH-RA">
+<package name="JST-2MM-TH-RA">
 <description>2.0 mm pitch, through-hole, right-angle JST header, suitable for small Li-po batteries etc.</description>
 <wire x1="3" y1="2.49" x2="3" y2="-5.21" width="0.127" layer="21"/>
 <wire x1="-3" y1="-5.21" x2="-3" y2="2.49" width="0.127" layer="21"/>
@@ -940,8 +940,8 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 <wire x1="0.3" y1="-0.41" x2="0.3" y2="2.49" width="0.127" layer="21"/>
 <wire x1="-3" y1="2.49" x2="-0.30835" y2="2.49" width="0.127" layer="21"/>
 <wire x1="0.30835" y1="2.49" x2="3" y2="2.49" width="0.127" layer="21"/>
-<pad name="POS" x="1" y="-3.81" drill="0.8" diameter="1.4224"/>
-<pad name="NEG" x="-1" y="-3.81" drill="0.8" diameter="1.4224"/>
+<pad name="POS" x="1" y="-3.81" drill="0.7"/>
+<pad name="NEG" x="-1" y="-3.81" drill="0.7"/>
 <text x="-3.81" y="6.35" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.81" y="3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -987,7 +987,7 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 </package>
 </packages>
 <symbols>
-<symbol name="FREETRONICS-LUKE_CELL">
+<symbol name="CELL">
 <pin name="POS" x="-2.54" y="2.54" visible="off" length="middle" direction="pwr"/>
 <pin name="NEG" x="-2.54" y="0" visible="off" length="middle" direction="pwr"/>
 <text x="0" y="5.588" size="1.27" layer="95" font="vector">&gt;NAME</text>
@@ -1019,13 +1019,13 @@ Note that there should nothing on the BOM corresponding to this "component".</de
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FREETRONICS-LUKE_2P-JST-TH-RA" prefix="B">
+<deviceset name="2P-JST-TH-RA" prefix="B">
 <description>2.0 mm pitch, through-hole 2-pin right-angle JST header, suitable for small Li-po batteries.</description>
 <gates>
-<gate name="G$1" symbol="FREETRONICS-LUKE_CELL" x="0" y="0"/>
+<gate name="G$1" symbol="CELL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PTH" package="FREETRONICS-LUKE_JST-2MM-TH-RA">
+<device name="PTH" package="JST-2MM-TH-RA">
 <connects>
 <connect gate="G$1" pin="NEG" pad="NEG"/>
 <connect gate="G$1" pin="POS" pad="POS"/>
@@ -1448,7 +1448,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$8" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="SJ1" library="freetronics-luke" deviceset="SJ" device=""/>
 <part name="SJ2" library="freetronics-luke" deviceset="SJ" device=""/>
-<part name="H2" library="freetronics-jon" deviceset="FREETRONICS-LUKE_2P-JST-TH-RA" device="PTH" value="2P-JST-PTH"/>
+<part name="H2" library="freetronics-jon" deviceset="2P-JST-TH-RA" device="PTH" value="2P-JST-PTH"/>
 <part name="U$9" library="freetronics-luke" deviceset="GND" device=""/>
 <part name="H1" library="freetronics-jon" deviceset="USB-6P" device="SMT"/>
 <part name="H3" library="freetronics-master-v1.1" deviceset="M02" device="PTH"/>
@@ -1457,7 +1457,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <sheet>
 <plain>
 <text x="7.62" y="20.32" size="3.048" layer="94">USB Li-ion/Li-poly Charger Module</text>
-<text x="38.1" y="14.478" size="1.778" layer="94">V1.1 (2013-05-14)</text>
+<text x="38.1" y="14.478" size="1.778" layer="94">V1.1 (2013-05-15)</text>
 <text x="7.62" y="14.478" size="1.778" layer="94">SKU: USBLIPO</text>
 <text x="7.366" y="9.398" size="1.778" layer="94">(C)2013 Freetronics Pty Ltd: www.freetronics.com</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Released under the TAPR Open Hardware License: www.tapr.org/ohl</text>
