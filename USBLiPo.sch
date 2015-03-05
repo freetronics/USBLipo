@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1457,7 +1457,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <sheet>
 <plain>
 <text x="7.62" y="20.32" size="3.048" layer="94">USB Li-ion/Li-poly Charger Module</text>
-<text x="38.1" y="14.478" size="1.778" layer="94">V1.1 (2013-05-15)</text>
+<text x="38.1" y="14.478" size="1.778" layer="94">V1.2 (2015-03-05)</text>
 <text x="7.62" y="14.478" size="1.778" layer="94">SKU: USBLIPO</text>
 <text x="7.366" y="9.398" size="1.778" layer="94">(C)2013 Freetronics Pty Ltd: www.freetronics.com</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Released under the TAPR Open Hardware License: www.tapr.org/ohl</text>

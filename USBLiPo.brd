@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="15" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -177,7 +177,7 @@
 <text x="19.558" y="14.0335" size="1.016" layer="22" ratio="15" rot="MR0">SJ1 SJ2 Charge Rate</text>
 <text x="19.558" y="12.827" size="1.016" layer="22" ratio="15" rot="MR0">0   0   100 mA</text>
 <text x="19.558" y="11.6205" size="1.016" layer="22" ratio="15" rot="MR0">0   1   200 mA</text>
-<text x="19.558" y="10.414" size="1.016" layer="22" ratio="15" rot="MR0">1   0   300 mA</text>
+<text x="19.558" y="10.414" size="1.016" layer="22" ratio="15" rot="MR0">1   0   400 mA</text>
 <text x="19.558" y="9.2075" size="1.016" layer="22" ratio="15" rot="MR0">1   1   500 mA</text>
 <wire x1="3.302" y1="3.302" x2="7.874" y2="3.302" width="0.254" layer="21"/>
 <wire x1="7.874" y1="3.302" x2="8.382" y2="2.794" width="0.254" layer="21" curve="-90"/>
@@ -214,7 +214,7 @@
 <wire x1="21.336" y1="6.604" x2="21.59" y2="6.604" width="0.3048" layer="21"/>
 <wire x1="21.59" y1="6.604" x2="21.59" y2="6.35" width="0.3048" layer="21"/>
 <wire x1="21.59" y1="6.35" x2="21.336" y2="6.35" width="0.3048" layer="21"/>
-<text x="3.683" y="12.2555" size="1.016" layer="22" font="vector" ratio="17" rot="SMR0">V1.1</text>
+<text x="3.683" y="12.2555" size="1.016" layer="22" font="vector" ratio="17" rot="SMR0">V1.2</text>
 <text x="15.494" y="2.032" size="1.016" layer="22" font="vector" ratio="17" rot="SMR0">Cell Charger</text>
 <text x="16.7005" y="13.7795" size="1.016" layer="21" ratio="15">CHARGER</text>
 </plain>
